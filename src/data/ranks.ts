@@ -10,6 +10,7 @@ export interface RankItem {
   name: string;
   price: number;
   priceFormatted: string;
+  originalPriceFormatted?: string;
   bio: string;
   perks: string[];
   itemIcon: string;
@@ -76,8 +77,8 @@ export const RANKS: RankItem[] = [
     id: 'vip',
     tier: '01',
     name: 'VIP',
-    price: 15000,
-    priceFormatted: 'Rp 15.000',
+    price: 10000,
+    priceFormatted: 'Rp 10.000',
     bio: 'Rank awal paling pas untuk petualang baru yang ingin tampil beda dengan fitur kenyamanan ekstra di GraciaSMP.',
     perks: [
       'Prefix [VIP] Eksklusif di Chat & Tab',
@@ -102,8 +103,8 @@ export const RANKS: RankItem[] = [
     id: 'pro',
     tier: '02',
     name: 'PRO',
-    price: 35000,
-    priceFormatted: 'Rp 35.000',
+    price: 20000,
+    priceFormatted: 'Rp 20.000',
     bio: 'Upgrade survival lebih leluasa dengan kapasitas penyimpanan portabel dan kuota klaim lahan lebih luas.',
     perks: [
       'Semua Fitur Rank VIP Sebelumnya',
@@ -128,8 +129,8 @@ export const RANKS: RankItem[] = [
     id: 'mvp',
     tier: '03',
     name: 'MVP',
-    price: 65000,
-    priceFormatted: 'Rp 65.000',
+    price: 30000,
+    priceFormatted: 'Rp 30.000',
     bio: 'Pilihan favorit builder dan trader aktif dengan akses terbang di lobby serta slot lelang lebih besar.',
     perks: [
       'Semua Fitur Rank VIP+ Sebelumnya',
@@ -154,8 +155,9 @@ export const RANKS: RankItem[] = [
     id: 'elite',
     tier: '04',
     name: 'ELITE',
-    price: 100000,
-    priceFormatted: 'Rp 100.000',
+    price: 50000,
+    priceFormatted: 'Rp 50.000',
+    originalPriceFormatted: 'Rp 55.000',
     bio: 'Dirancang untuk pemain kompetitif yang menginginkan efisiensi penuh, prioritas antrean, dan kosmetik premium.',
     perks: [
       'Semua Fitur Rank MVP Sebelumnya',
@@ -180,8 +182,9 @@ export const RANKS: RankItem[] = [
     id: 'gracian',
     tier: '05',
     name: 'GRACIAN',
-    price: 150000,
-    priceFormatted: 'Rp 150.000',
+    price: 60000,
+    priceFormatted: 'Rp 60.000',
+    originalPriceFormatted: 'Rp 70.000',
     bio: 'Kasta tertinggi di GraciaSMP dengan seluruh keistimewaan sultan, kit legendaris, dan penghormatan spesial.',
     perks: [
       'Semua Fitur Rank MVP+ Tanpa Batas',

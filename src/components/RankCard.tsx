@@ -50,9 +50,19 @@ export function RankCard({ rank, index = 0, onBuy }: RankCardProps) {
                     className="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] [image-rendering:pixelated]"
                   />
                 </div>
-                <p className={`mt-2 font-mono text-xl sm:text-2xl font-bold tabular-nums tracking-tight ${rank.titleColor}`}>
-                  {rank.priceFormatted}
-                </p>
+                <div className="mt-2 flex flex-wrap items-baseline gap-2.5">
+                  <p className={`font-mono text-xl sm:text-2xl font-bold tabular-nums tracking-tight ${rank.titleColor}`}>
+                    {rank.priceFormatted}
+                  </p>
+                  {rank.originalPriceFormatted && (
+                    <span
+                      className={`font-mono text-sm sm:text-base font-bold tabular-nums line-through decoration-2 opacity-80 ${rank.metaColor}`}
+                      aria-label={`Harga normal ${rank.originalPriceFormatted}`}
+                    >
+                      {rank.originalPriceFormatted}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 

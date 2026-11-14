@@ -77,6 +77,11 @@ export function PaymentModal({ rank, onClose }: PaymentModalProps) {
               <span className="font-mono tabular-nums text-sky-300">
                 {rank.priceFormatted}
               </span>
+              {rank.originalPriceFormatted && (
+                <span className="ml-2 font-mono text-sm tabular-nums text-sky-200/55 line-through">
+                  {rank.originalPriceFormatted}
+                </span>
+              )}
             </h2>
           </div>
 
