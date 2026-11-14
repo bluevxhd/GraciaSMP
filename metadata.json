@@ -1,0 +1,6 @@
+{
+  "name": "⚔️ GraciaSMP ⚔️",
+  "description": "Website pembelian rank server Minecraft GraciaSMP dengan tema biru muda glassmorphism, pembayaran QRIS DANA Bisnis (OVO, GoPay, DANA), dan layanan WhatsApp Admin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

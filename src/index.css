@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-minecraft: "Pixelify Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --animate-float-subtle: float-subtle 5.5s ease-in-out infinite;
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--font-minecraft);
+    color: #f0f6ff;
+    background-color: #050f24;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(1100px 680px at 14% -5%, rgba(30, 64, 175, 0.42) 0%, rgba(30, 64, 175, 0) 62%),
+      radial-gradient(950px 620px at 88% 8%, rgba(126, 34, 206, 0.22) 0%, rgba(126, 34, 206, 0) 58%),
+      radial-gradient(1000px 800px at 50% 100%, rgba(14, 116, 144, 0.25) 0%, rgba(14, 116, 144, 0) 65%),
+      linear-gradient(180deg, #040b1a 0%, #071530 48%, #0a1e42 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+}
+
+.glass-panel {
+  background: rgba(11, 28, 60, 0.56);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(148, 197, 255, 0.18);
+  box-shadow:
+    0 16px 42px -14px rgba(2, 8, 23, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-strong {
+  background: rgba(8, 21, 48, 0.9);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(148, 197, 255, 0.24);
+  box-shadow:
+    0 28px 68px -16px rgba(2, 6, 20, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
