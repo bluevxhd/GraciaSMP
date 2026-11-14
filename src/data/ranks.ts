@@ -111,7 +111,7 @@ export const RANKS: RankItem[] = [
     name: 'PRO',
     price: 20000,
     priceFormatted: 'Rp 20.000',
-    bio: 'Upgrade survival lebih leluasa dengan kapasitas penyimpanan portabel dan kuota klaim lahan lebih luas.',
+    bio: 'Upgrade survival lebih leluasa dengan kapasitas penyimpanan portabel dan fitur utilitas tambahan.',
     perks: [
       '2x Survival XP Multiplier',
       'Pro Kit Access (+ Kits from earlier ranks)',
